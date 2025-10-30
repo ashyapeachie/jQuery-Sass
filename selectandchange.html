@@ -4,8 +4,15 @@ filename:
 description: select an element and change its text when a button is clicked
 -->
 
-<h2 id="heading">Hellow World!</h2>
+<!DOCTYPE html>
+<html lang="en">
+    <h2 id="heading">Hello, World!</h2>
 
-<button id="changeTetx">Change the Text</button>
+    <button id="changeText">Change Text</button>
 
-<script></script>
+    <script>
+        $("#changeText").click(function() {
+            $("#heading").text("you changed me using jQuery!");
+        });
+    </script>
+</html>
