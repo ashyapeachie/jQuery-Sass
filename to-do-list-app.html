@@ -17,12 +17,26 @@ description: mini project practicing jQuery skills
 
     <body>
         <h2>My to-do's</h2>
-        <input>
+        <input type="text" id="newTask" placeholder="Add new task">
 
-        <button></button>
+        <button id="addTask">Add</button>
 
         <ul>"tasklist"</ul>
 
-        <script></script>
+        <script>
+            $(document).ready(function() {
+                $("#addTask").click(function() {
+                
+                })
+
+                $("#taskList").on("click", "li", function() {
+                    $(this).toggleClass("completed");
+                })
+
+                $("#taskList").on({
+                
+                })
+            })
+        </script>
     </body>
 </html>
