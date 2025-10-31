@@ -13,13 +13,16 @@ description: select an element and change its text when a button is clicked
 
     <style>
         body {
-            font-family: 
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
         }
         #heading {
-
+            transition: all 0.5s ease;
         }
     </style>
 </head>
+
 <body>
     <h2 id="heading">Hello, World!</h2>
 
@@ -28,7 +31,16 @@ description: select an element and change its text when a button is clicked
     <script>
         $(document).ready(function() {
             $("#changeText").click(function() {
-                $("#heading").text("you changed me using jQuery!");
+                $("#heading").html("<strong>✨ You changed me with jQuery! ✨</strong>");
+
+                $("#heading").css({
+                    "color": "pink",
+                    "font-size": "32px",
+                    "background-color": "magenta",
+                    "padding": "15px",
+                    "border-radius": "10px",
+                    "display": "inline-block"
+                })
             });
         });
     </script>
