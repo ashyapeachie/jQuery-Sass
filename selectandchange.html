@@ -9,6 +9,7 @@ description: select an element and change its text when a button is clicked
 <head>
     <meta charset="UTF-8">
     <title>Changing of Text</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <h2 id="heading">Hello, World!</h2>
@@ -16,9 +17,12 @@ description: select an element and change its text when a button is clicked
     <button id="changeText">Change Text</button>
 
     <script>
-        $("#changeText").click(function() {
-            $("#heading").text("you changed me using jQuery!");
+        $(document).ready(function() {
+            $("#changeText").click(function() {
+                $("#heading").text("you changed me using jQuery!");
+            });
         });
     </script>
 </body>
 </html>
+<!-- will come back to annotate :) -->
