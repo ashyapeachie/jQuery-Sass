@@ -3,3 +3,25 @@ author: Aham
 filename: toggglevisibility.html
 description: show / hide a paragraph when clicking a button
 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <p>random text to hide or show</p>
+    <!-- unimportant, but i wanna add a smiley face -->
+    <button id="toggleBtn">
+        Toggle Text!
+    </button>
+
+    <script>
+        $("#toggleBtn").click(function() {
+            $("#info").toggle();
+        });
+    </script>
+    <!-- the .toggle() concept is the important thing -->
+     <!-- also found out i can't make comments inside <script> blocks -->
+</body>
+</html>
