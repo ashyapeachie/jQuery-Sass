@@ -26,15 +26,20 @@ description: mini project practicing jQuery skills
         <script>
             $(document).ready(function() {
                 $("#addTask").click(function() {
-                
-                })
+                    let task = $("#newTask").val().trim();
+                    if (task !== "") {
+                    $("#taskList").append(`<li>${task} 
+                        <button class="delete">❌</button></li>`);
+                    $("#newTask").val("");
+                    }
+                });
 
                 $("#taskList").on("click", "li", function() {
                     $(this).toggleClass("completed");
                 })
 
-                $("#taskList").on({
-                
+                $("#taskList").on("click", ".delete", function(e){
+                    
                 })
             })
         </script>
