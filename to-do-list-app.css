@@ -31,7 +31,7 @@ li {
 
 .completed {
    text-decoration: line-through;
-   color: gray; 
+   color: #ec1a6b; 
 }
 
 button[type="addTask"] {
@@ -40,4 +40,8 @@ button[type="addTask"] {
   background-color: #75df77;
   color: white;
   border: none;
+}
+
+button[type="addTask"]:hover {
+  background-color: #458845;
 }
