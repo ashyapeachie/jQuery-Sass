@@ -8,26 +8,45 @@ description: mini project practicing jQuery skills
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name>
+        <meta name="viewport" content="width=device-width, initial-scal=1.0">
         <title>To-Do App</title>
         <link rel="stylesheet" href="to-do-list-app.css">
         <p>
-            this app features: adding tasks, marking tasks as complete, deleting 
+            This app features: adding tasks, marking tasks as complete, deleting 
             tasks, and saving tasks in local storage!
         </p>
     </head>
         
     <body>
-        <!-- kind of wanna add a nav system to go from past written tasks -->
-        <h2>My to-do's</h2>
+        <!-- nav bar -->
+        <nav class="navbar">
+            <h1>To-Do App</h1>
+            <ul class="nav-links">
+                <li><a href="#current-tasks">Current Tasks</a></li>
+                <li><a href="#past-tasks">Past Tasks</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
     </body>
 
+    <!-- content of the page -->
     <main>
-        <input type="text" id="newTask" placeholder="Add new task">
+        <section id="current-tasks">
+            <h2>My to-do's</h2>
 
-        <button id="addTask">Add</button>
+            <input type="text" id="newTask" placeholder="Add new task">
+            <button id="addTask">Add</button>
+            <ul></ul>
+        </section>
 
-        <ul>"tasklist"</ul>
+        <section id="past-tasks">
+            <h2>Past Tasks</h2>
+            <p></p>
+        </section>
+
+        <section id="about">
+            <h2>About</h2>
+        </section>
 
         <script>
             /* add new task */
