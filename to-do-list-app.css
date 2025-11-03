@@ -14,6 +14,11 @@ main {
   border-radius: 8px;
 }
 
+h1 {
+  font-size: 2em;
+  color: #2cb42e;
+}
+
 h2 {
   font-size: 1.5em;
   color:  #ff71a8;
@@ -27,4 +32,10 @@ li {
 .completed {
    text-decoration: line-through;
    color: gray; 
+}
+
+button[type="addTask"] {
+  background-color: #75df77;
+  color: white;
+  border: none;
 }
