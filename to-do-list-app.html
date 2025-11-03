@@ -34,15 +34,20 @@ description: mini project practicing jQuery skills
                     $("#newTask").val("");
                     }
                 });
-                
+
+                /* mark task as complete */
                 $("#taskList").on("click", "li", function() {
                     $(this).toggleClass("completed");
                 })
 
+                /* delete task */
                 $("#taskList").on("click", ".delete", function(e){
-                    
-                })
-            })
+                    e.stopPropagayion();
+                    $(this).parent()/fadeOut(300, function() {
+                        $(this).remove();
+                    });
+                });
+            });
         </script>
     </body>
 </html>
