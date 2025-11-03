@@ -34,14 +34,18 @@ li {
    color: #ec1a6b; 
 }
 
-button[type="addTask"] {
-  margin-top: 15px;
+button {
   padding: 10px;
-  background-color: #75df77;
-  color: white;
-  border: none;
 }
 
-button[type="addTask"]:hover {
-  background-color: #458845;
+#addTask {
+
+}
+
+#addTask:hover {
+  
+}
+
+.delete {
+  
 }
