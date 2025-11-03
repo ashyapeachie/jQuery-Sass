@@ -24,6 +24,7 @@ description: mini project practicing jQuery skills
         <ul>"tasklist"</ul>
 
         <script>
+            /* add new task */
             $(document).ready(function() {
                 $("#addTask").click(function() {
                     let task = $("#newTask").val().trim();
@@ -33,7 +34,7 @@ description: mini project practicing jQuery skills
                     $("#newTask").val("");
                     }
                 });
-
+                
                 $("#taskList").on("click", "li", function() {
                     $(this).toggleClass("completed");
                 })
