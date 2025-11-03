@@ -39,13 +39,18 @@ button {
 }
 
 #addTask {
-
+  margin-top: 15px;
+  background-color: #75df77;
+  color: white;
 }
 
 #addTask:hover {
-  
+  background-color: #458845;
 }
 
 .delete {
-  
+  background-color: transparent;
+  color: #ec1a6b;
+  font-size: 1em;
+  margin-left: 10px;
 }
