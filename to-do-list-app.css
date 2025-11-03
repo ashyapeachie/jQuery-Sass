@@ -35,6 +35,8 @@ li {
 }
 
 button[type="addTask"] {
+  margin-top: 15px;
+  padding: 10px;
   background-color: #75df77;
   color: white;
   border: none;
