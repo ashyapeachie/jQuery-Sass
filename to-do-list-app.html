@@ -9,6 +9,7 @@ description: mini project practicing jQuery skills
     <head>
         <meta charset="UTF-8">
         <h1>To-Do App</h1>
+        <link rel="stylesheet" href="to-do-list-app.css">
         <p>
             this app features: adding tasks, marking tasks as complete, deleting 
             tasks, and saving tasks in local storage!
@@ -17,14 +18,15 @@ description: mini project practicing jQuery skills
 
     <body>
         <h2>My to-do's</h2>
+    </body>
+
+    <main>
         <input type="text" id="newTask" placeholder="Add new task">
 
         <button id="addTask">Add</button>
 
         <ul>"tasklist"</ul>
-    </body>
 
-    <main>
         <script>
             /* add new task */
             $(document).ready(function() {
