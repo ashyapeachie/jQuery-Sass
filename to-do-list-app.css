@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #FFF1E6;
+  background-color: #fff1e6;
   margin: 0;
   padding: 0;
   color: #333;
@@ -10,8 +10,9 @@ main {
   max-width: 800px;
   margin: 40px auto;
   padding: 20px;
-  background-color: #FFF1E6;
+  background-color: #FFF5E6;
   border-radius: 8px;
+  /* possibly adding a subtle difference so it's not blending */
 }
 
 h1 {
