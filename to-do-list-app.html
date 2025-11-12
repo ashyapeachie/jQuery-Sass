@@ -36,7 +36,7 @@ description: mini project practicing jQuery skills
 
             <input type="text" id="newTask" placeholder="Add new task">
             <button id="addTask">Add</button>
-            <ul></ul>
+            <ul id="taskList"></ul>
         </section>
 
         <section id="past-tasks">
@@ -67,8 +67,8 @@ description: mini project practicing jQuery skills
 
                 /* delete task */
                 $("#taskList").on("click", ".delete", function(e){
-                    e.stopPropagayion();
-                    $(this).parent()/fadeOut(300, function() {
+                    e.stopPropagation();
+                    $(this).parent().fadeOut(300, function() {
                         $(this).remove();
                     });
                 });
